@@ -46,3 +46,4 @@
   },
   "homepage": "https://github.com/leroythe3rd/disrepair-claims-app#readme"
 }
+"postinstall": "chmod +x node_modules/.bin/vite"
