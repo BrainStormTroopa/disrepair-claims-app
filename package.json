@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json"
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "postinstall": "chmod +x node_modules/.bin/vite"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
@@ -46,4 +47,4 @@
   },
   "homepage": "https://github.com/leroythe3rd/disrepair-claims-app#readme"
 }
-"postinstall": "chmod +x node_modules/.bin/vite"
+
