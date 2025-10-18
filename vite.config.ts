@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// GitHub Pages deployment configuration
 export default defineConfig({
+  base: '/property-solutions/',
   plugins: [react()],
-  base: '/disrepair-claims-app/'
-})
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
+});
